@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Netflix</title>
+    <title>Netflix Clone For Education</title>
     <link
       rel="shortcut icon"
       href="/Assets/Image/favicon.png"
@@ -12,8 +12,9 @@
     />
   </head>
   <header class="relative">
+    <!-- Navbar Section-->
     <nav
-      class="container bg-[url(./Assets/Image/bg.jpg)] max-w-full min-h-[68vh] md:min-h-[800px] border-b-8 border-neutral-500 relative"
+      class="container bg-[url(./Assets/Image/bg.jpg)] max-w-full min-h-[68vh] md:min-h-[800px] border-b-8 border-neutral-800 relative"
     >
       <div class="absolute inset-0 bg-black opacity-65 z-0"></div>
       <div class="relative flex justify-between items-center px-5">
@@ -77,22 +78,23 @@
     </nav>
   </header>
   <body>
+    <!-- Enjoy on your TV Section-->
     <div
-      class="container bg-black max-w-full flex-1 md:flex items-center py-36 justify-center md:py-48 border-b-8 border-neutral-300 md:max-h-[600px]"
+      class="container bg-black max-w-full md:flex items-center pt-12 pb-28 justify-center md:py-48 border-b-8 border-[#423e3e] md:max-h-[600px]"
     >
       <div
-        class="text-white text-center md:text-left md:px-5 mx-5 pb-24 md:max-w-[50%]"
+        class="text-white text-center md:text-left md:px-5 mx-5 pb-14 md:max-w-[50%]"
       >
         <p class="text-4xl font-bold md:text-6xl md:pb-6 md:pt-[20%]">
           Enjoy on your TV
         </p>
-        <p class="mb-10 md:text-3xl">
+        <p class="mb-10 md:text-3xl text-lg pt-2">
           Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
           players, and more.
         </p>
       </div>
 
-      <div class="relative">
+      <div class="relative mx-10 :">
         <video
           src="./Assets/Video/Netflix.m4v"
           autoplay
@@ -110,6 +112,51 @@
             class="w-screen h-screen object-contain"
           />
         </div>
+      </div>
+    </div>
+    <!-- Download your shows Section -->
+    <div
+      class="bg-black flex flex-col justify-center items-center py-16 md:flex-row-reverse border-b-8 border-[#423e3e]"
+    >
+      <div
+        class="text-white text-center md:text-left pr-4 md:max-w-[35vw] px-5 md:min-w-[500px]"
+      >
+        <p class="text-4xl font-bold md:text-6xl md:font-extrabold">
+          Download your shows to watch offline
+        </p>
+        <p class="text-lg pt-4 md:text-3xl">
+          Save your favorites easily and always have something to watch.
+        </p>
+      </div>
+      <div style="position: relative">
+        <img src="./Assets/Image/mobile.jpg" alt="" class="relative" />
+        <div
+          class="absolute text-white bg-black flex px-4 py-2 rounded-2xl items-center border-2 border-[#423e3e] min-w-[350px] max-w-[350px]"
+          style="top: 80%; left: 50%; transform: translate(-50%, -50%)"
+        >
+          <img src="./Assets/Image/boxshot.png" alt="" class="w-16" />
+          <div class="pl-4 pr-16">
+            <p class="text-lg">สเตรนเจอร์ ธิงส์</p>
+            <p class="text-l text-blue-600">Downloading...</p>
+          </div>
+          <img src="./Assets/Image/download-icon.gif" alt="" class="w-12" />
+        </div>
+      </div>
+    </div>
+    <!-- Download your shows Section -->
+    <div
+      class="container bg-black max-w-full pt-12 pb-16 border-b-8 border-[#423e3e]"
+    >
+      <div
+        class="text-white text-center pr-4 md:max-w-[35vw] px-5 md:min-w-[900px] md:text-left md:pl-[25%]"
+      >
+        <p class="text-4xl font-bold md:text-5xl md:font-extrabold">
+          Watch everywhere
+        </p>
+        <p class="text-lg pt-4 md:text-2xl font-semibold">
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
       </div>
     </div>
   </body>
